@@ -14,8 +14,8 @@ Benchmark: 8 core 1M annotations for 2Gb sorted reads ~30 seconds compared to ~2
 
 Requires bamtools API library at run time, and c++0x for compile.
 
-git clone https://github.com/pezmaster31/bamtools
-cd bamtools
+git clone https://github.com/pezmaster31/bamtools\n
+cd bamtools\n
 mkdir build
 cd build
 cmake ..
