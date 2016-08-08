@@ -1,17 +1,14 @@
 # fast_count
 
-Counts NGS read alignments against GTF annotations in a multithreaded and scalable fashion.
-
-Benchmark: 8 core 1M annotations for 2Gb sorted reads ~30 seconds compared to ~28 minutes for bedtools multicov.
-
-Files include:
-fast_count_multi - reports all counts and RPKM, multithreading support
-fast_count_deseq - reports gene counts in deseq compatible format, multithreading support
-fast_count - reports all counts with no multithreading support.
-
 usage
 
 ./fast_count_multi num_threads gtf_file bam_file(s) > output
+
+Files included:
+fast_count_multi - reports all counts and TPM, multithreading support
+fast_count_deseq - reports gene counts in deseq compatible format, multithreading support
+
+Benchmark: 8 core 1M annotations for 2Gb sorted reads ~30 seconds compared to ~28 minutes for bedtools multicov.
 
 Requires bamtools API library at run time, and c++0x for compile.
 
