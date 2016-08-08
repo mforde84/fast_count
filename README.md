@@ -5,7 +5,9 @@ usage
 ./fast_count_multi num_threads gtf_file bam_file(s) > output
 
 Files included:
+
 fast_count_multi - reports all counts and TPM, multithreading support
+
 fast_count_deseq - reports gene counts in deseq compatible format, multithreading support
 
 Benchmark: 8 core 1M annotations for 2Gb sorted reads ~30 seconds compared to ~28 minutes for bedtools multicov.
